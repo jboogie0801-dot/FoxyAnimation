@@ -226,8 +226,9 @@ function scg() {
   document.getElementById("ans").play();
   document.getElementById("imgchange3").classList.remove("Phone");
   document.getElementById("imgchange3").classList.add("Guard");
-      document.getElementById("imgchange3").style.top = "100%";
+  document.getElementById("imgchange3").style.top = "100%";
   r2();
+}
   function r2() {
     document.getElementById("r2").play();
     setTimeout(res1, 6000);
@@ -256,7 +257,7 @@ function scg() {
     document.getElementById("r5").play();
     setTimeout(bye, 2500);
   }
-}
+
 
 function bye() {
   document.getElementById("o13").play();
