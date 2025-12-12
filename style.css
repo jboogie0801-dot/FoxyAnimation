@@ -1,0 +1,293 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-color: black;
+  overflow: hidden;
+}
+
+.box {
+  height: 100vh;
+  width: 100vw;
+}
+
+.Computer {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  content: url("images/Computer.png");
+  z-index: 2;
+  top: 43%;
+  left: 35%;
+}
+
+.red {
+  background-color: #ed1110;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.dark-grey {
+  background-color: #a8a9a9;
+}
+h1 {
+  text-decoration: underline;
+}
+
+.Security2 {
+  content: url("images/SecureCams2.gif");
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  filter: brightness(1);
+  top: 48%;
+  z-index: 3;
+  left: 40.5%;
+}
+
+.Jumpscare {
+  content: url("images/Jumpscare.gif");
+  position: absolute;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+}
+.PiratesCOVE {
+  content: url("images/images (1).jpg");
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 500px;
+  filter: brightness(1); /* Initial brightness value (100%) */
+  transition: filter 0.01s linear;
+}
+.fly-forward {
+  transform: translate(0, -100%);
+  transition: transform 3s;
+}
+.bottom {
+  align-items: flex-end;
+  display: flex;
+}
+.rotating-element {
+  animation: spin 1.35s linear infinite; /* Apply the 'spin' animation */
+  /* animation: [name] [duration] [timing-function] [iteration-count]; */
+}
+
+.clickable {
+  filter: brightness(100%);
+}
+
+.clickable2 {
+  filter: brightness(100%);
+}
+
+.clickable2:hover {
+  filter: brightness(120%);
+  transform: scale(1.04);
+}
+
+.clickable:hover {
+  filter: brightness(170%);
+}
+
+.gone {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees (one full rotation) */
+  }
+}
+
+.FoxWalk {
+  content: url("images/WalkOff.gif");
+  width: 20%;
+  height: 220%;
+  top: -25%;
+  left: 80%;
+  position: absolute;
+  z-index: 4;
+}
+.Office {
+  content: url("images/Office.webp");
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0); /* Initial brightness value (100%) */
+  transition: filter 0.01s linear;
+}
+.StartButton {
+  content: url("images/StartButton.png");
+  width: 20%;
+  height: 50%;
+  top: 30%;
+  left: 2%;
+  align-self: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.StartButton2 {
+  content: url("images/StartButton.png");
+  width: 20%;
+  height: 50%;
+  top: 30%;
+  left: 78%;
+  align-self: center;
+  position: absolute;
+  z-index: 2;
+}
+.Phone {
+  content: url("images/Holdphone.png");
+  height: 55%;
+  width: 15%;
+  filter: brightness(1);
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  z-index: 3;
+}
+.Guard {
+  width: 30%;
+  height: 55%;
+  content: url("images/Guard.png");
+  position: absolute;
+  left: 35%;
+  top: 100%;
+  z-index: 4;
+}
+
+.yes-cursor {
+  cursor: pointer;
+}
+
+.Haha {
+  width: 30%;
+  height: 55%;
+  content: url("images/laugh.png");
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  z-index: 4;
+}
+.Help {
+  width: 501px;
+  height: 350px;
+  position: absolute;
+  content: url("images/Computer.png");
+  align-self: center;
+  z-index: 2;
+}
+.Door {
+  content: url("images/PrivateDoorL (1).webp");
+  width: 30%;
+  height: 115%;
+  left: -8%;
+  position: absolute;
+  z-index: 4;
+}
+.BigScreen {
+  content: url("images/BigScreen.png");
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.FoxJ {
+  content: url("images/Foxyjump.png");
+  position: absolute;
+  height: 125vh;
+  width: 150%;
+  z-index: 4;
+}
+.Door2 {
+  content: url("images/ClosedDoor.png");
+  width: 15%;
+  height: 100%;
+  left: 3%;
+  position: absolute;
+  z-index: 4;
+}
+.SadFox {
+  content: url("images/Sadfox.png");
+  opacity: 0.3;
+  width: 6%;
+  height: 28%;
+  left: 22%;
+  top: 43%;
+  position: absolute;
+  z-index: 6;
+}
+@media only screen and (max-width: 800px) {
+  .StartButton {
+    width: 50%;
+    height: 30%;
+    top: 0%;
+    left: 22%;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+  }
+  .StartButton2 {
+    width: 50%;
+    height: 30%;
+    top: 70%;
+    left: 22%;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+  }
+  .Help {
+    width: 500px;
+    height: 350px;
+    align-self: center;
+    position: absolute;
+    margin-bottom: 0%;
+    margin-left: -8%;
+    content: url("images/Tablet.png");
+  }
+}
+@media only screen and (max-width: 400px) {
+  .StartButton {
+    width: 50%;
+    height: 30%;
+    top: 0%;
+    left: 22%;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+  }
+  .StartButton2 {
+    content: url("images/StartButton.png");
+    width: 50%;
+    height: 30%;
+    top: 70%;
+    left: 22%;
+    position: absolute;
+    z-index: 2;
+  }
+  .Help {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-bottom: 0%;
+    margin-left: -8%;
+    content: url("images/Tablet.png");
+    align-self: center;
+  }
+}
