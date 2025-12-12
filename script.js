@@ -496,6 +496,7 @@ function back() {
 function one() {
   document.getElementById("imgchange2").classList.remove("FoxJ");
   document.getElementById("imgchange3").classList.add("Guard");
+      document.getElementById("imgchange3").style.top = "100%";
   document.getElementById("boom").play();
   setTimeout(two, 3700);
 }
