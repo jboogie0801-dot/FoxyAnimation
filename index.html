@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Fox Ting</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="box center-content bottom">
+        <img class="PiratesCOVE" id="lowerbright" />
+        <img
+          class="gone StartButton clickable yes-cursor"
+          onclick="start1()"
+          id="press"
+        />
+        <img
+          class="gone yes-cursor StartButton2 clickable"
+          onclick="start2()"
+          id="press2"
+        />
+        <img
+          class="Help clickable2 yes-cursor"
+          onclick="helpresp()"
+          id="press3"
+        />
+        <img class="invisible" id="imgchange" />
+        <img class="invisible" id="imgchange2" />
+        <img class="invisible" id="imgchange3" />
+        <img class="invisible" id="imgchange4" />
+        <img class="invisible" id="imgchange5" />
+      </div>
+      <script src="script.js"></script>
+      <audio id="menu">
+        <source src="sound/UCN.mp3" type="audio/mp3" />
+        <audio id="boop">
+          <source src="sound/Boop.mp3" type="audio/mp3" />
+          <audio id="Offis">
+            <source src="sound/Ambiance.mp3" type="audio/mp3" />
+            <audio id="call">
+              <source
+                src="sound/Discord Incoming Call Sound Effect (HD)  How to.mp3"
+                type="audio/mp3"
+              />
+              <audio id="ans">
+                <source src="sound/Discord answer sound.mp3" type="audio/mp3" />
+                <audio id="slam">
+                  <source
+                    src="sound/FNAF 1 Door Slamming - Sound Effect 🔊.mp3"
+                    type="audio/mp3"
+                  />
+                  <audio id="laff">
+                    <source
+                      src="sound/audiomass-output (1).mp3"
+                      type="audio/mp3"
+                    />
+                    <audio id="rizz">
+                      <source src="sound/Charisma.mp3" type="audio/mp3" />
+                      <audio id="RAWR">
+                        <source src="sound/Jumpscare.mp3" type="audio/mp3" />
+                        <audio id=":/">
+                          <source
+                            src="sound/Banana Cat Crying - Sound Effect.mp3"
+                            type="audio/mp3"
+                          />
+                          <audio id="mad1">
+                            <source
+                              src="sound/Foxy Hitting Door [Sound Effect].mp3"
+                              type="audio/mp3"
+                            />
+                            <audio id="mad2">
+                              <source
+                                src="sound/Nightguard!.mp3"
+                                type="audio/mp3"
+                              />
+                              <audio id="r20">
+                                <source
+                                  src="sound/recordings/Recording (20).mp3"
+                                  type="audio/mp3"
+                                />
+                                <audio id="res5">
+                                  <source
+                                    src="sound/recordings/Resp5.wav"
+                                    type="audio/wav"
+                                  />
+                                  <audio id="o4">
+                                    <source
+                                      src="sound/recordings/output (4).wav"
+                                      type="audio/wav"
+                                    />
+                                    <audio id="o6">
+                                      <source
+                                        src="sound/recordings/output (6).mp3"
+                                        type="audio/mp3"
+                                      />
+                                      <audio id="r1">
+                                        <source
+                                          src="sound/recordings/Rec1.wav"
+                                          type="audio/wav"
+                                        />
+                                        <audio id="r10">
+                                          <source
+                                            src="sound/recordings/Rec10.wav"
+                                            type="audio/wav"
+                                          />
+                                          <audio id="res1">
+                                            <source
+                                              src="sound/recordings/resp1.wav"
+                                              type="audio/wav"
+                                            />
+                                            <audio id="r2">
+                                              <source
+                                                src="sound/recordings/Rrec2.wav"
+                                                type="audio/mp3"
+                                              />
+                                              <audio id="res2">
+                                                <source
+                                                  src="sound/recordings/output (28).wav"
+                                                  type="audio/wav"
+                                                />
+                                                <audio id="r3">
+                                                  <source
+                                                    src="sound/recordings/Rec3.wav"
+                                                    type="audio/wav"
+                                                  />
+
+                                                  <audio id="r4">
+                                                    <source
+                                                      src="sound/recordings/Recording 30.wav"
+                                                      type="audio/wav"
+                                                    />
+                                                    <audio id="res4">
+                                                      <source
+                                                        src="sound/recordings/output (29).wav"
+                                                        type="audio/wav"
+                                                      />
+                                                      <audio id="r5">
+                                                        <source
+                                                          src="sound/recordings/Recording (32).wav"
+                                                          type="audio/wav"
+                                                        />
+
+                                                        <audio id="res3">
+                                                          <source
+                                                            src="sound/recordings/output (29).wav"
+                                                            type="audio/wav"
+                                                          />
+                                                          <audio id="o7">
+                                                            <source
+                                                              src="sound/recordings/output (7).wav"
+                                                              type="audio/wav"
+                                                            />
+
+                                                            <audio id="o13">
+                                                              <source
+                                                                src="sound/recordings/output (13).wav"
+                                                                type="audio/wav"
+                                                              />
+                                                              <audio id="o14">
+                                                                <source
+                                                                  src="sound/recordings/output (14).wav"
+                                                                />
+                                                                <audio id="o15">
+                                                                  <source
+                                                                    src="sound/recordings/output (16).wav"
+                                                                    type="audio/mp3"
+                                                                  />
+                                                                  <audio
+                                                                    id="o16"
+                                                                  >
+                                                                    <source
+                                                                      src="sound/recordings/output (17).wav"
+                                                                      type="audio/mp3"
+                                                                    />
+                                                                    <audio
+                                                                      id="o17"
+                                                                    >
+                                                                      <source
+                                                                        src="sound/recordings/output (18).wav"
+                                                                        type="audio/mp3"
+                                                                      />
+                                                                      <audio
+                                                                        id="o18"
+                                                                      >
+                                                                        <source
+                                                                          src="sound/recordings/Recording (27).wav"
+                                                                          type="audio/wav"
+                                                                        />
+                                                                        <audio
+                                                                          id="res?"
+                                                                        >
+                                                                          <source
+                                                                            src="sound/recordings/Rec2.wav"
+                                                                            type="audio/wav"
+                                                                          />
+                                                                          <audio
+                                                                            id="boom"
+                                                                          >
+                                                                            <source
+                                                                              src="sound/Vine boom sound effect.mp3"
+                                                                              type="audio/mp3"
+                                                                            />
+                                                                            <audio
+                                                                              id="leave"
+                                                                            >
+                                                                              <source
+                                                                                src="sound/discord leave sound effect.mp3"
+                                                                                type="audio/mp3"
+                                                                              />
+                                                                              <audio
+                                                                                id="yum"
+                                                                              >
+                                                                                <source
+                                                                                  src="sound/audiomass-output (2).mp3"
+                                                                                  type="audio/mp3"
+                                                                                />
+                                                                                <audio
+                                                                                  id="message"
+                                                                                >
+                                                                                  <source
+                                                                                    src="sound/recordings/output 20.wav"
+                                                                                    type="audio/wav"
+                                                                                  />
+                                                                                  <audio
+                                                                                    id="bleep"
+                                                                                  >
+                                                                                    <source
+                                                                                      src="sound/Voicemail Sound Effect.mp3"
+                                                                                      type="audio/mp3"
+                                                                                    />
+                                                                                    <audio
+                                                                                      id="off"
+                                                                                    >
+                                                                                      <source
+                                                                                        src="sound/phone-end.mp3"
+                                                                                        type="audio/mp3"
+                                                                                      />
+                                                                                      <audio
+                                                                                        id="SR1"
+                                                                                      >
+                                                                                        <source
+                                                                                          src="sound/recordings/SRes1.wav"
+                                                                                          type="audio/wav"
+                                                                                        />
+                                                                                        <audio
+                                                                                          id="SR2"
+                                                                                        >
+                                                                                          <source
+                                                                                            src="sound/recordings/SRes2.wav"
+                                                                                            type="audio/wav"
+                                                                                          />
+                                                                                          <audio
+                                                                                            id="SR3"
+                                                                                          >
+                                                                                            <source
+                                                                                              src="sound/recordings/SRes3.wav"
+                                                                                              type="audio/wav"
+                                                                                            />
+                                                                                            <audio
+                                                                                              id="SR4"
+                                                                                            >
+                                                                                              <source
+                                                                                                src="sound/recordings/SRes4.wav"
+                                                                                                type="audio/wav"
+                                                                                              />
+                                                                                              <audio
+                                                                                                id="SR5"
+                                                                                              >
+                                                                                                <source
+                                                                                                  src="sound/recordings/SRes5.wav"
+                                                                                                  type="audio/wav"
+                                                                                                />
+                                                                                                <audio
+                                                                                                  id="SR6"
+                                                                                                >
+                                                                                                  <source
+                                                                                                    src="sound/recordings/output 26.wav"
+                                                                                                    type="audio/wav"
+                                                                                                  />
+                                                                                                  <audio
+                                                                                                    id="SR7"
+                                                                                                  >
+                                                                                                    <source
+                                                                                                      src="sound/recordings/output 27.wav"
+                                                                                                      type="audio/wav"
+                                                                                                    />
+                                                                                                  </audio>
+                                                                                                </audio>
+                                                                                              </audio>
+                                                                                            </audio>
+                                                                                          </audio>
+                                                                                        </audio>
+                                                                                      </audio>
+                                                                                    </audio>
+                                                                                  </audio>
+                                                                                </audio>
+                                                                              </audio>
+                                                                            </audio>
+                                                                          </audio>
+                                                                        </audio>
+                                                                      </audio>
+                                                                    </audio>
+                                                                  </audio>
+                                                                </audio>
+                                                              </audio>
+                                                            </audio>
+                                                          </audio>
+                                                        </audio>
+                                                      </audio>
+                                                    </audio>
+                                                  </audio>
+                                                </audio>
+                                              </audio>
+                                            </audio>
+                                          </audio>
+                                        </audio>
+                                      </audio>
+                                    </audio>
+                                  </audio>
+                                </audio>
+                              </audio>
+                            </audio>
+                          </audio>
+                        </audio>
+                      </audio>
+                    </audio>
+                  </audio>
+                </audio>
+              </audio>
+            </audio>
+          </audio>
+        </audio>
+      </audio>
+    </body>
+  </html>
+</html>
