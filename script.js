@@ -225,6 +225,7 @@ function thirdChangingImage() {
 function scg() {
   document.getElementById("ans").play();
   document.getElementById("imgchange3").classList.remove("Phone");
+    document.getElementById("imgchange3").style.top = "100%";
   document.getElementById("imgchange3").classList.add("Guard");
   r2();
   function r2() {
