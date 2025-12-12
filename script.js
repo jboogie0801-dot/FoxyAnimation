@@ -32,6 +32,7 @@ function helpresp() {
         document.getElementById("menu").volume = 0.3;
         document.getElementById("press").classList.remove("gone");
         document.getElementById("press2").classList.remove("gone");
+        bgNoise();
       },
       { once: true }
     );
@@ -61,6 +62,8 @@ function helpresp() {
         document.getElementById("menu").volume = 0.3;
         document.getElementById("press").classList.remove("gone");
         document.getElementById("press2").classList.remove("gone");
+        document.getElementById("menu").loop = true;
+        document.getElementById("menu").play();
       },
       { once: true }
     );
@@ -581,12 +584,6 @@ function LastAud() {
   document.getElementById("off").play();
 }
 
-window.onload = () => {
-  document.getElementById("menu").loop = true;
-  document.getElementById("menu").volume = 0.3;
-  document.getElementById("menu").play();
-};
-
 function bgNoise() {
   if (startAnim) {
     document.getElementById("menu").pause();
@@ -602,3 +599,4 @@ function bgNoise() {
 }
 
 resizeObserver.observe(HButton);
+
